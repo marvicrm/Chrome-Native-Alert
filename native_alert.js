@@ -1,5 +1,6 @@
 /*
 	Chrome Native Alert & Confirm
+	https://github.com/marvicrm/Chrome-Native-Alert
 	
 	@version 1.0
 	@author Marvic Macalintal
