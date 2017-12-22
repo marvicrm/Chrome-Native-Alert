@@ -71,7 +71,7 @@ build	:	function( type, str ) {
 	var hostname = window.location.hostname, cover = document.createElement( 'div' ), modal_content = document.createElement( 'div' );
 		
 	cover.setAttribute( 'style', this.css()['cover'] );
-	cover.setAttribute( 'class', 'cph_alert' );
+	cover.setAttribute( 'class', 'n_alert' );
 	modal_content.setAttribute( 'style', this.css()['alert'] );
 	
 	document.body.appendChild( cover );
@@ -114,7 +114,7 @@ events	:	function() {
 remove	:	function( element ) {
 	try {		
 		document.getElementById( element ).addEventListener( 'click', function() {
-			var elem = document.getElementsByClassName( 'cph_alert' )[0];
+			var elem = document.getElementsByClassName( 'n_alert' )[0];
 			document.body.removeChild( elem );
 		});
 	} catch( err ) {}
