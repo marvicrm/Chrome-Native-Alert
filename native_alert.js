@@ -12,7 +12,7 @@
 	n.alert("Hello World!");
 
 	// confirm 
-	n.confirm( "Are you sure?", 
+	n.confirm("Are you sure?", 
 				
 				function() {
 					console.log( "Okay button was clicked" );
