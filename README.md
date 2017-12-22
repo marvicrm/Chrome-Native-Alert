@@ -22,6 +22,7 @@ Inspired by Google chrome's native alert, use it on any browser
 
 # Screenshots
 ![alert](http://i63.tinypic.com/mj313d.png)
+![confirm](http://i64.tinypic.com/55pc9w.png)
 
 # Supported Browsers
 Currently, this project has been tested on IE9+ and other modern browsers (Chrome, Firefox, Safari)
