@@ -84,7 +84,7 @@ build	:	function( type, str ) {
 			modal_content.innerHTML = '<section style="'+this.css()['modal_header']+'"><button id="close_btn" style="'+this.css()['close_btn']+'">x</button></section>';
 			modal_content.innerHTML+= '<span style="'+this.css()['header_txt']+'">'+hostname+' says:</span>';
 			modal_content.innerHTML+= '<span style="'+this.css()['content_txt']+'">' + str + '</span>';
-			modal_content.innerHTML += '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button></section>';
+			modal_content.innerHTML+= '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button></section>';
 			
 		break;
 	
@@ -93,7 +93,7 @@ build	:	function( type, str ) {
 			modal_content.innerHTML = '<section style="'+this.css()['modal_header']+'"><button id="close_btn" style="'+this.css()['close_btn']+'">x</button></section>';
 			modal_content.innerHTML+= '<span style="'+this.css()['header_txt']+'">'+hostname+' says:</span>';
 			modal_content.innerHTML+= '<span style="'+this.css()['content_txt']+'">' + str + '</span>';
-			modal_content.innerHTML += '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button><button id="cancel_btn" style="'+this.css()['cancel_btn']+'">Cancel</button></section>';
+			modal_content.innerHTML+= '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button><button id="cancel_btn" style="'+this.css()['cancel_btn']+'">Cancel</button></section>';
 			
 		break;
 	
