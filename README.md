@@ -21,7 +21,7 @@ Inspired by Google chrome's native alert, use it on any browser
 	);
 
 # Screenshots
-![alert](http://i63.tinypic.com/mj313d.png)
+![alert](http://i68.tinypic.com/2nsp0rl.png)
 ![confirm](http://i64.tinypic.com/55pc9w.png)
 
 # Supported Browsers
