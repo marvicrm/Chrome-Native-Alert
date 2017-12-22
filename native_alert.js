@@ -125,13 +125,13 @@ css		:	function() {
 	
 	var style = {
 		
-		'alert'			:		'background:#fcfcfc;color:#333;padding:10px;margin:0 auto;min-width:30%;border:1px solid #ccc;border-radius:3px;position:fixed;left:0;right:0;padding:1px 5px 2px 15px;box-shadow:1px 1px 1px #ccc;top:0;font-family:sans-serif;width:200px;',
+		'alert'		:		'background:#fcfcfc;color:#333;padding:10px;margin:0 auto;min-width:30%;border:1px solid #ccc;border-radius:3px;position:fixed;left:0;right:0;padding:1px 5px 2px 15px;box-shadow:1px 1px 1px #ccc;top:0;font-family:sans-serif;width:200px;',
+						
+		'cover'		:		'height:100%;width:100%;position:absolute;background:transparent;top:0;',
 							
-		'cover'			:		'height:100%;width:100%;position:absolute;background:transparent;top:0;',
+		'close_btn'	:		'outline:none;font-weight:bold;background:#fcfcfc;border:none;',
 							
-		'close_btn'		:		'outline:none;font-weight:bold;background:#fcfcfc;border:none;',
-							
-		'ok_btn'		:		'box-shadow:1px 1px 1px #ccc;background:#3399ff;border-radius:3px;border:1px solid #fff;padding:7px 25px 7px 25px;color:#fff;font-weight:bold;',
+		'ok_btn'	:		'box-shadow:1px 1px 1px #ccc;background:#3399ff;border-radius:3px;border:1px solid #fff;padding:7px 25px 7px 25px;color:#fff;font-weight:bold;',
 							
 		'cancel_btn'	:		'margin-left:10px;box-shadow:1px 1px 1px #ccc;background:#fcfcfc;border-radius:3px;border:1px solid #ccc;padding:7px 25px 7px 25px;color:#000;',
 							
