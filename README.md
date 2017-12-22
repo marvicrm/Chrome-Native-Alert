@@ -19,3 +19,6 @@ Inspired by Google chrome's native alert, use it on any browser
 			console.log( "Cancel button was clicked" );
 		}
 	);
+
+# Supported Browsers
+Currently, this project has been tested on IE9+ and other modern browsers (Chrome, Firefox, Safari)
