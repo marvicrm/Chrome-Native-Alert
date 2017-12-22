@@ -1,4 +1,4 @@
-# Chrome-Native-Alert
+# Chrome Native Alert
 Inspired by Google chrome's native alert, use it on any browser
 
 # Usage:
@@ -19,6 +19,9 @@ Inspired by Google chrome's native alert, use it on any browser
 			console.log( "Cancel button was clicked" );
 		}
 	);
+
+# Screenshots
+![alert](http://i63.tinypic.com/mj313d.png)
 
 # Supported Browsers
 Currently, this project has been tested on IE9+ and other modern browsers (Chrome, Firefox, Safari)
