@@ -1,7 +1,7 @@
 /*
 	Chrome Native Alert & Confirm
 	https://github.com/marvicrm/Chrome-Native-Alert
-	
+		
 	@version 1.0
 	@author Marvic Macalintal
 	
@@ -13,7 +13,7 @@
 	n.alert("Hello World!");
 
 	// confirm 
-	n.confirm("Are you sure?", 
+	n.confirm( "Are you sure?", 
 				
 				function() {
 					console.log( "Okay button was clicked" );
@@ -82,10 +82,10 @@ build	:	function( type, str ) {
 	
 		case 'alert':
 
-			modal_content.innerHTML = '<section style="'+this.css()['modal_header']+'"><button id="close_btn" style="'+this.css()['close_btn']+'">x</button></section>';
+			modal_content.innerHTML = '<section style="'+this.css()['modal_header']+'"><button class="close_btn" id="close_btn" style="'+this.css()['close_btn']+'">x</button></section>';
 			modal_content.innerHTML+= '<span style="'+this.css()['header_txt']+'">'+hostname+' says:</span>';
 			modal_content.innerHTML+= '<span style="'+this.css()['content_txt']+'">' + str + '</span>';
-			modal_content.innerHTML+= '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button></section>';
+			modal_content.innerHTML += '<section style="'+this.css()['modal_footer']+'"><button class="ok_btn" id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button></section>';
 			
 		break;
 	
@@ -94,7 +94,7 @@ build	:	function( type, str ) {
 			modal_content.innerHTML = '<section style="'+this.css()['modal_header']+'"><button id="close_btn" style="'+this.css()['close_btn']+'">x</button></section>';
 			modal_content.innerHTML+= '<span style="'+this.css()['header_txt']+'">'+hostname+' says:</span>';
 			modal_content.innerHTML+= '<span style="'+this.css()['content_txt']+'">' + str + '</span>';
-			modal_content.innerHTML+= '<section style="'+this.css()['modal_footer']+'"><button id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button><button id="cancel_btn" style="'+this.css()['cancel_btn']+'">Cancel</button></section>';
+			modal_content.innerHTML += '<section style="'+this.css()['modal_footer']+'"><button class="ok_btn" id="ok_btn" style="'+this.css()['ok_btn']+'">OK</button><button class="cancel_btn" id="cancel_btn" style="'+this.css()['cancel_btn']+'">Cancel</button></section>';
 			
 		break;
 	
@@ -113,11 +113,16 @@ events	:	function() {
 
 // remove || close modal
 remove	:	function( element ) {
-	try {		
-		document.getElementById( element ).addEventListener( 'click', function() {
+try {
+		
+	var el = document.getElementsByClassName( element );
+	for(i=0;i<=el.length;i++) {
+		el.item(i).addEventListener( 'click', function() {
 			var elem = document.getElementsByClassName( 'n_alert' )[0];
-			document.body.removeChild( elem );
+			elem.parentNode.removeChild(elem);
 		});
+	}
+		
 	} catch( err ) {}
 },
 
@@ -127,8 +132,8 @@ css		:	function() {
 	var style = {
 		
 		'alert'		:		'background:#fcfcfc;color:#333;padding:10px;margin:0 auto;min-width:30%;border:1px solid #ccc;border-radius:3px;position:fixed;left:0;right:0;padding:1px 5px 2px 15px;box-shadow:1px 1px 1px #ccc;top:0;font-family:sans-serif;width:200px;',
-						
-		'cover'		:		'height:100%;width:100%;position:absolute;background:transparent;top:0;',
+							
+		'cover'		:		'z-index:9999999;height:100%;width:100%;position:absolute;background:transparent;top:0;',
 							
 		'close_btn'	:		'outline:none;font-weight:bold;background:#fcfcfc;border:none;',
 							
